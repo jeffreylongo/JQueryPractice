@@ -26,6 +26,13 @@ namespace JQueryPractice
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap.css",
                       "~/Content/site.css"));
+
+            //adding bundles for jqueryUI
+            bundles.Add(new ScriptBundle("~/bundles/jqueryui").Include(
+                "~/Scripts/jquery-ui-{version}.js"));
+            //css
+            bundles.Add(new StyleBundle("~/Content/cssjqryUi").Include(
+                "~/Content/jquery-ui.css"));
         }
     }
 }
